@@ -5,10 +5,10 @@ A Python library for automating iOS device interactions through a client-server 
 ## Quick Start
 
 ```python
-from imouse import api
+import imouse
 
 # Connect to the iMouse server
-api = api(host="localhost", port="80")  # Default: localhost:9912
+api = imouse.api(host="localhost", port="9912")  # Default: localhost:9912
 # Or specify custom host/port
 # mouse = api(host="192.168.1.100", port=9912)
 
@@ -40,7 +40,7 @@ The Console API provides access to device management and global operations:
 
 ```python
 # Console operations
-api = api(host="localhost", port="80")
+api = imouse.api(host="localhost", port="9912")
 console = api.console()
 
 # Restart the iMouse server
@@ -63,7 +63,7 @@ The Device API provides control over individual iOS devices:
 
 ```python
 # Get a device instance
-api = api(host="localhost", port="80")
+api = imouse.api(host="localhost", port="9912")
 device = api.device("device_id")
 
 # Mouse operations

@@ -5,10 +5,10 @@ The Device module provides a comprehensive interface for controlling and interac
 ## Installation & Setup
 
 ```python
-from imouse import api
+import imouse
 
 # Initialize the API with host and port (defaults to localhost:9912)
-api = api(host="localhost", port=9912)
+api = imouse.api(host="localhost", port="9912")
 
 # Connect to a specific device
 device = api.device(device_id="your_device_id")

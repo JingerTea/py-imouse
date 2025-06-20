@@ -5,10 +5,10 @@ The Console module provides a comprehensive interface for managing iOS devices t
 ## Installation & Setup
 
 ```python
-from imouse import api
+import imouse
 
 # Initialize the API with host and port (defaults to localhost:9912)
-api = api(host="localhost", port=9912)
+api = imouse.api(host="localhost", port="9912")
 
 # Access the console interface
 console = api.console()
