@@ -2,12 +2,6 @@
 
 A Python library for automating iOS device interactions through a client-server architecture.
 
-## Installation
-
-```bash
-pip install ios-automator
-```
-
 ## Quick Start
 
 ```python
