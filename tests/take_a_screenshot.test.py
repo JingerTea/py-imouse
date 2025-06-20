@@ -27,10 +27,10 @@ def base64_to_bmp(data: dict):
 
 
 # Initialize HttpApi class with kernel service IP address as parameter
-api = imouse.api(host="imouse.turboitem.com", port=80)
+api = imouse.api(host="localhost", port="9912")
 
 console = api.console()
-device_list = console.get_device_list()
+device_list = console.device.get_all()
 devices = list(device_list["data"].items())
 first_device_id, first_device_info = devices[0]
 
